@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('image/greybg.jpg');
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 10vh;
+    font-size: 35px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 40vh;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 30px;
+}
+
+
+#you, #bot{
+    margin-top: 30px;
+}
+
+.shakePlayer{
+    animation: shakePlayer 0.8s linear;
+}    
+
+.shakeBot{
+    animation: shakeBot 0.8s linear;
+}
+
+.result button{
+    border: none;
+    border-radius: 4px;
+    background: goldenrod;
+    font-size: 25px;
+    padding: 10px 20px ;
+    cursor: pointer;
+    transition: 0.4s all linear;
+}
+
+.result button:hover{
+    background-color: rgb(187, 139, 16);
+    border: 1px solid rgb(227, 176, 48);
+}
+
+#click{
+    font-style: italic;
+}
+
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shakeBot {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
